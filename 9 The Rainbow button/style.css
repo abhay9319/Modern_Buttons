@@ -1,0 +1,22 @@
+body{
+  margin-top: 150px;
+  text-align: center;
+}
+.rainbow{
+  background-color: #343A40;
+  border-radius: 16px;  
+  color: #fff;
+  cursor: pointer;
+  padding: 12px 32px; 
+}
+.rainbow:hover{
+   background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+   animation:slide 3s linear infinite;/*slide is the name of animation*/
+  /*3s is the time taken to make one osciallation of the animation*/
+  /*linear pattern and will happen infinite times*/
+}
+@keyframes slide { 
+  to {
+    background-position:20vw;
+  }
+}
